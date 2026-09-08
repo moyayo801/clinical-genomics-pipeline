@@ -1,6 +1,3 @@
-Here is a refined, highly professional version. It removes the conversational tone and metaphors, focusing strictly on system capabilities, architecture, and engineering execution.
-
-```markdown
 # Scalable Distributed Architecture for Real-Time Clinical Genomics AI
 
 This repository contains the implementation of a distributed big data ecosystem engineered for the real-time processing and analysis of clinical genomic data. Designed to overcome the computational bottlenecks of traditional bioinformatics pipelines, the system leverages a microservices architecture to ingest continuous patient data, run parallelized machine learning models, and compute sequence divergence at scale.
@@ -81,9 +78,3 @@ Initializes the Streamlit UI for real-time patient monitoring.
 
 ```bash
 streamlit run app.py
-
-```
-
-```
-
-```
