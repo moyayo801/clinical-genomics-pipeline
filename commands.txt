@@ -1,0 +1,12 @@
+train model:
+docker exec -it spark-master /spark/bin/spark-submit /spark_jobs/batch_train_model.py
+activate env:
+.\venv\Scripts\activate 
+run frontend:
+ streamlit run infrastructure/app.py 
+
+ run engine :
+ docker exec -it spark-master /spark/bin/spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.3.0,org.mongodb.spark:mongo-spark-connector_2.12:3.0.1 /spark_jobs/streaming_engine.py
+
+ empty the database :
+ docker exec -it mongodb mongosh precision_medicine --eval "db.patient_risks.drop()"
